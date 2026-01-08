@@ -303,7 +303,7 @@ Just-in-Rust/
 ## Resources
 
 - **[Documentation](https://docs.rs/legion)** - API documentation and guides
-- **[Legion Book](docs/book/src/introduction.md)** - Detailed book covering Legion's internals
+- **[Legion Book](https://github.com/httpEduardo/Just-in-Rust/blob/main/docs/book/src/introduction.md)** - Detailed book covering Legion's internals
 - **[GitHub Repository](https://github.com/httpEduardo/Just-in-Rust)** - Source code and issue tracker
 - **[ECS Bench Suite](https://github.com/rust-gamedev/ecs_bench_suite)** - Performance benchmarks
 
