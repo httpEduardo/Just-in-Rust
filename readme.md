@@ -39,7 +39,7 @@ Add Legion to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-legion = "0.3"
+legion = "0.3.0"
 ```
 
 ### Optional Features
@@ -48,7 +48,7 @@ Legion supports several optional features:
 
 ```toml
 [dependencies]
-legion = { version = "0.3", features = ["parallel", "serialize", "codegen"] }
+legion = { version = "0.3.0", features = ["parallel", "serialize", "codegen"] }
 ```
 
 - **`parallel`** - Enables parallel system execution (enabled by default)
