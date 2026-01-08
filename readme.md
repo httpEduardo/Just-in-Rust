@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/legion.svg)](https://crates.io/crates/legion)
 [![Documentation](https://docs.rs/legion/badge.svg)](https://docs.rs/legion)
-[![Build Status](https://travis-ci.org/TomGillen/legion.svg?branch=master)](https://travis-ci.org/TomGillen/legion)
+[![CI](https://github.com/httpEduardo/Rust-Game/workflows/CI/badge.svg)](https://github.com/httpEduardo/Rust-Game/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Legion aims to be a feature-rich, high-performance Entity Component System (ECS) library for Rust game projects with minimal boilerplate.
