@@ -2,7 +2,7 @@
 
 [![Crates.io](https://img.shields.io/crates/v/legion.svg)](https://crates.io/crates/legion)
 [![Documentation](https://docs.rs/legion/badge.svg)](https://docs.rs/legion)
-[![CI](https://github.com/httpEduardo/Rust-Game/workflows/CI/badge.svg)](https://github.com/httpEduardo/Rust-Game/actions)
+[![CI](https://github.com/httpEduardo/Just-in-Rust/workflows/CI/badge.svg)](https://github.com/httpEduardo/Just-in-Rust/actions)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Legion aims to be a feature-rich, high-performance Entity Component System (ECS) library for Rust game projects with minimal boilerplate.
@@ -18,6 +18,7 @@ Legion aims to be a feature-rich, high-performance Entity Component System (ECS)
   - [Querying Entities](#querying-entities)
   - [Systems and Scheduling](#systems-and-scheduling)
 - [Performance](#performance)
+- [Project Structure](#project-structure)
 - [Resources](#resources)
 - [Contributing](#contributing)
 - [License](#license)
@@ -268,13 +269,43 @@ Legion is designed for high performance:
 
 For benchmarks comparing Legion with other Rust ECS libraries, see the [ECS Bench Suite](https://github.com/rust-gamedev/ecs_bench_suite).
 
+## Project Structure
+
+The project is organized as follows:
+
+```
+Just-in-Rust/
+├── src/                  # Core library source code
+│   ├── lib.rs           # Library entry point
+│   ├── world.rs         # World and entity management
+│   ├── storage.rs       # Component storage implementation
+│   ├── query.rs         # Query system for entity iteration
+│   ├── systems.rs       # System execution and scheduling
+│   ├── serialize.rs     # Serialization support
+│   └── internals/       # Internal implementation details
+├── codegen/             # Procedural macro code generation
+├── benches/             # Performance benchmarks
+├── tests/               # Integration tests
+├── docs/                # Documentation and book
+│   └── book/           # Legion book chapters
+├── Cargo.toml          # Project manifest and dependencies
+└── README.md           # This file
+```
+
+### Key Components
+
+- **World**: The container for all entities and components
+- **Storage**: Efficient archetype-based storage system
+- **Query**: Type-safe query system for accessing component data
+- **Systems**: Function-based systems with automatic parallelization
+- **Serialization**: Optional serde-based serialization support
+
 ## Resources
 
 - **[Documentation](https://docs.rs/legion)** - API documentation and guides
-- **[Legion Book](docs/book/src/introduction.md)** - Detailed book covering Legion's internals
-- **[GitHub Repository](https://github.com/TomGillen/legion)** - Source code and issue tracker
+- **[Legion Book](https://github.com/httpEduardo/Just-in-Rust/blob/main/docs/book/src/introduction.md)** - Detailed book covering Legion's internals
+- **[GitHub Repository](https://github.com/httpEduardo/Just-in-Rust)** - Source code and issue tracker
 - **[ECS Bench Suite](https://github.com/rust-gamedev/ecs_bench_suite)** - Performance benchmarks
-- **[Examples](examples/)** - Example projects using Legion
 
 ## Contributing
 
@@ -284,8 +315,8 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ```bash
 # Clone the repository
-git clone https://github.com/TomGillen/legion.git
-cd legion
+git clone https://github.com/httpEduardo/Just-in-Rust.git
+cd Just-in-Rust
 
 # Build the project
 cargo build
